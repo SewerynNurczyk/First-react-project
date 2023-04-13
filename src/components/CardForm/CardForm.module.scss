@@ -1,0 +1,23 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.text {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    > * {
+      width: calc(50% - 10px);
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    > *:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
