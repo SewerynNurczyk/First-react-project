@@ -1,9 +1,13 @@
 import Card from '../Card/Card';
 import styles from './Column.module.scss';
 import CardForm from '../CardForm/CardFrom';
+import { useSelector } from 'react-redux';
 
 
 const Column = props => {
+
+  const cards = useSelector(state => state.cards);
+
   return (
     <article className={styles.column}>
       <h2 className={styles.title}><span className={styles.icon + ' fa fa-' + props.icon} />{props.title}</h2>
