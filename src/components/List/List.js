@@ -7,9 +7,9 @@ const List = () => {
     
     const columns = useSelector(state => state.columns);
 
-    const addCard = () =>{}
+   // const addCard = () =>{}
 
-    const addColumn = () =>{}
+    //const addColumn = () =>{}
 
     return (
         <div className={styles.list}>
@@ -18,9 +18,9 @@ const List = () => {
             </header >
             <p className={styles.description}>Interesting things I want to check out</p>
             <section className={styles.columns}>
-            {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon} cards={column.cards} addC={addCard}/>)}
+            {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon}/>)}
             </section>
-            <ColumnForm action={addColumn} />
+            <ColumnForm/>
         </div>
     );
 };
