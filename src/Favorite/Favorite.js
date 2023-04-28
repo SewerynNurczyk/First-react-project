@@ -2,7 +2,7 @@ import PageTitle from "../components/PageTitle/PageTitle";
 
 const Favorite = () => {
 return (
-    <div >
+    <div>
         <PageTitle>Favorite</PageTitle>
       <p>Lorem ipsum</p> 
     </div>
