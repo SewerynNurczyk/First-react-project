@@ -1,4 +1,5 @@
 const initialState = {
+  
   lists: [
     {
       id: '1',
@@ -14,25 +15,25 @@ const initialState = {
 
   columns: [
     {
-      id: 1,
+      id: '1',
       listId: '1',
       title: 'Books',
       icon: 'book',
     },
     {
-      id: 2,
+      id: '2',
       listId: '1',
       title: 'Movies',
       icon: 'film',
     },
     {
-      id: 3,
+      id: '3',
       listId: '1',
       title: 'Games',
       icon: 'gamepad',
     },
     {
-      id: 4,
+      id: '4',
       listId: '2',
       title: 'Songs',
       icon: 'music',
@@ -40,7 +41,7 @@ const initialState = {
   ],
 
   cards: [
-    { id: 1, columnId: '1', isFavorite: true, title: 'This is Going to Hurt' },
+    { id: 1, columnId: '1', isFavorite: false, title: 'This is Going to Hurt' },
     { id: 2, columnId: '1', isFavorite: false, title: 'Interpreter of Maladies' },
     { id: 3, columnId: '2', isFavorite: false, title: 'Harry Potter' },
     { id: 4, columnId: '2', isFavorite: false, title: 'Star Wars' },

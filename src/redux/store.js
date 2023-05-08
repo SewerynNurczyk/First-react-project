@@ -5,7 +5,7 @@ import strContains from '../components/utils/strContains';
 
 //selectors
 export const getFilteredCards = ({ cards, searchString }, columnId) => {
-  console.log(cards)
+console.log(cards)
   return cards
   .filter(card => card.columnId === columnId && strContains(card.title, searchString));
 
@@ -21,7 +21,7 @@ export const getAllLists = state => state.lists;
 
 export const getSearchString = state => state.searchString;
 
-export const getFavoriteCard = state => state.cards.filter((card) => card.isFavorite === true);
+export const getIsFavoriteCards = ({ cards }) => cards.filter((card) => card.isFavorite === true);
 
 
 
@@ -58,8 +58,8 @@ const reducer = (state, action) => {
       
   }
   switch (action.type) {
-  case 'TOGGLE_CARD_FAVORITE':
-      return { ...state, cards: state.cards.map(card => (card.id === action.payload) ? { ...card, isFavorite: !card.isFavorite } : card) };
+    case 'TOGGLE_CARD_FAVORITE':
+      return { ...state, cards: state.cards.map((card) => (card.id === action.payload ? { ...card, isFavorite: !card.isFavorite } : card)) };
       default:
       return state;
     };

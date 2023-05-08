@@ -1,32 +1,30 @@
 @import '../../styles/settings.scss';
 
-.card {
-    position: relative;
-    background: $color-light;
-    border: 1px solid lighten($color-dark, 60%);
-    padding: $base-size;
-    margin: 0 0 $base-size 0;
-    border-radius: $radius;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+.cards {
+  position: relative;
+  background: $color-light;
+  border: 1px solid lighten($color-dark, 60%);
+  padding: $base-size;
+  margin: 0 0 $base-size 0;
+  border-radius: $radius;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
-.icon::before {
-    padding-right: $base-size;
-    vertical-align: middle;
-    position: relative;
+
+.button {
+  width: 17px;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+
+  .icon {
+    font-size: 16px;
+    margin-left: 5px;
   }
-  
-  .button {
-    width: 17px;
-    padding: 0;
-    background-color: transparent;
-    border-color: transparent;
-  
-  }
-  
-  .isActive {
-    opacity: 1;
-    transform: scale(1.2);
-    color: blue;
-  }
+}
+
+.isActive {
+  transform: scale(1.2);
+  color: rgb(119, 77, 235);
+}
